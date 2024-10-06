@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Campus Event Streaming - Login</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Login</h2>
+            <form method="POST" action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="reg_num">Registration Number</label>
+                    <input type="text" class="form-control" id="reg_num" name="reg_num" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Campus Event Streaming</p>
+    </footer>
+</body>
+</html>
