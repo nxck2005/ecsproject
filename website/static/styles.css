@@ -1,69 +1,60 @@
+/* General styling */
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-/* header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-main {
-    padding: 20px;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.container {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-control {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.btn {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #007bff;
+.navbar-brand, .nav-link {
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.nav-link:hover {
+    color: #2c3e50;
 }
 
+/* Header */
+header h1 {
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Video section */
+#video-container {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #000;
+}
+
+#fallback {
+    color: #ff6b6b;
+}
+
+/* Event Cards */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-} */
+    background: linear-gradient(135deg, #2c3e50, #1e1e1e);
+    color: white;
+    padding: 20px;
+}
