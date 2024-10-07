@@ -42,8 +42,15 @@
                 <div class="col-lg-8">
                     <h2 class="mb-4">Live Event Stream</h2>
                     <div id="video-container" class="bg-dark text-white p-3 d-flex justify-content-center">
-                        <iframe class="embed-responsive-item" src="https://ecsproject.ngrok.app" style="width: 100%; height: 500px; border: none;" allowfullscreen></iframe>
+                        <iframe id="stream-iframe" class="embed-responsive-item" src="https://ecsproject.ngrok.app" 
+                                style="width: 100%; height: 500px; border: none;" allowfullscreen
+                                onerror="document.getElementById('fallback').style.display = 'block'; this.style.display = 'none';">
+                        </iframe>
+                        <div id="fallback" style="display: none; color: white; text-align: center;">
+                            The live stream is currently offline. Please check back later.
+                        </div>
                     </div>
+                    <h4 class="mb-4">Error ERR_NGROK_3200 means the stream is offline!</h4>
                 </div>
             </div>
         </section>
