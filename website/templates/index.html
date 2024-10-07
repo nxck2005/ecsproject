@@ -6,7 +6,6 @@
     <title>Campus Event Streaming</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
 </head>
 <body>
 
@@ -30,64 +29,23 @@
             </nav>
         </div>
     </header>
-    
-    <!-- Main Content -->
-    <main class="container my-5">
-        <!-- Live Stream Section -->
-        <section id="stream" class="text-center mb-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="mb-4">Live Event Stream</h2>
-                    <div id="video-container" class="bg-dark text-white p-4 rounded shadow">
-                        <p>Stream will appear here</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Events Section -->
-        <section id="events" class="mb-5">
-            <h2 class="text-center mb-4">Upcoming Events</h2>
-            <div class="row">
-                <!-- Use responsive columns to adapt layout on smaller screens -->
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 1</h5>
-                            <p class="card-text">Date: <strong>25th Oct 2024</strong><br>Time: <strong>5:00 PM</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 2</h5>
-                            <p class="card-text">Date: <strong>30th Oct 2024</strong><br>Time: <strong>6:00 PM</strong></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Event 3</h5>
-                            <p class="card-text">Date: <strong>5th Nov 2024</strong><br>Time: <strong>4:00 PM</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+
+    <!-- Stream Placeholder -->
+    <section id="home" class="py-5">
         <div class="container">
-            <p>&copy; 2024 Campus Event Streaming. All rights reserved.</p>
+            <h2 class="text-center mb-4">Live Stream</h2>
+            <!-- Embed the stream here -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://ecsproject.ngrok.app" allowfullscreen></iframe>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Optional: Add any other sections like Events, About, Contact here -->
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
