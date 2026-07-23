@@ -3,6 +3,6 @@
 - Aviral Sharma
 - Sujal Kumar
 - Sreeparna Mukherjee
-- Sreelakshmi
+- Sreelakshmi T B
 - Bhargav Bhardwaj 
 - Nishchal Ravi
